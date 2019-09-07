@@ -13,6 +13,7 @@ class NotesController < ApplicationController
   end
 
   def edit
+
   end
 
   def create
@@ -22,6 +23,7 @@ class NotesController < ApplicationController
 
   def update
     @note.update(note_params)
+    redirect_to note_path(@note)
   end
 
   def destroy

@@ -1,2 +1,4 @@
 <h2><%= @note.name %></h2>
 <p><%= @note.description %></p>
+<%= link_to "Back Home", notes_path %>
+<%= link_to "Edit", edit_note_path(@note) %>
