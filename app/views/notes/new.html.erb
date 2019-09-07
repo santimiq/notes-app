@@ -1,0 +1,7 @@
+<%= simple_form_for @note do |f| %>
+  <%= f.input :name %>
+  <%= f.input :description %>
+  <%= f.button :submit %>
+<% end %>
+
+<%= link_to "Back Home", notes_path %>
